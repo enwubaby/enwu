@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>九九乘法表 javaScript</title>
+    <style>
+        .nin{
+            font-size: 14px;
+            font-weight: bold;
+            color: #FFF;
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <a href="../index.html">回首頁</a>
+    </center>
+    <center>
+        <table border="1" cellspacing=0 width="300px" style="border-collapse: collapse;border-width: 2px;">
+            <thead>
+                <tr>
+                    <td colspan="3" align="center" class="nin">九九乘法表</td>
+                </tr>
+            </thead>
+            <script>
+                for (var i=0, n=1; i<3;n%3==0 ? i++:i,n++)
+                {
+            		if(n==4||n==7)
+            			document.writeln("</tr>");
+            		if(n%3==1)
+            			document.writeln("<tr align=\"center\">");
+            		document.write("<td>");
+                        for (var j=1;j<10;j++)
+                        {
+            				if(n*j < 10)
+            					document.write(n+"&nbsp;"+"*"+"&nbsp;"+j+"&nbsp;=&nbsp;&nbsp;&nbsp;"+n*j+"<br>");
+            				else
+                                document.write(n+"&nbsp;"+"*"+"&nbsp;"+j+"&nbsp;=&nbsp;"+n*j+"<br>");
+                        }
+            		document.write("</td>");
+            	}
+            	document.write("</tr>");
+            </script>
+        </table>
+    </center>
+</body>
+</html>
