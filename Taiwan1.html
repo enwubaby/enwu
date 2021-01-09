@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
     <meta charset="utf-8"/>
     <title>在台灣武漢肺炎疫情</title>
 <style> 
@@ -74,6 +73,37 @@
 	  position: relative;
 	  font-size: 20px;
 	}	
+    #num
+    {
+      margin: 0px;
+	  width: 0%;
+      color:#fff;
+	  height: 20px;
+	  background-color: #2f1d42;
+	  position: relative;
+	  font-size: 20px;
+    }
+    #num2
+    {
+      margin: 0px;
+	  width: 0%;
+      color:#fff;
+	  height: 20px;
+	  background-color: #41285c;
+	  position: relative;
+	  font-size: 20px;
+    }
+
+    #num3
+    {
+      margin: 0px;
+	  width: 0%;
+      color:#fff;
+	  height: 20px;
+	  background-color: #5c4475;
+	  position: relative;
+	  font-size: 20px;
+    }
 　
 
 </style> 
@@ -86,14 +116,15 @@
           <td><a href="#B"><div id="btn2" onmouseover="on(2)" onmouseleave="leave(2)">口罩販賣</div></td></a>
           <td><a href="#C"><div id="btn3" onmouseover="on(3)" onmouseleave="leave(3)">控制方針</div></td></a>
           <td><a href="#D"><div id="btn4" onmouseover="on(4)" onmouseleave="leave(4)">疫情影響</div></td></a>
-          <td><a href="#E"><div id="btn5" onmouseover="on(5)" onmouseleave="leave(5)">資訊來源</div></td></a>
+          <td><a href="#E"><div id="btn5" onmouseover="on(5)" onmouseleave="leave(5)">病例計算</div></td></a>
           <td width="40px"><a href ="hw07.html"><img src="home.png" width="40px"></a></td>
           
         </tr>
     </table></center>
 	<div style="width:50%;margin:0 auto;padding-right:25%;padding-left:25%;>
+    
     <img src="z.png" width="100%"> 
-    <div id="body"><h1>最新防疫專案</h1>
+   <h1>最新防疫專案</h1>
     <h4>12月1日秋冬防疫專案</h4>
         <p>
         一、邊境檢疫：所有入境及轉機旅客登機前須附3日內COVID-19核酸檢驗陰性報告<br>
@@ -148,14 +179,87 @@
     <h4>經濟</h4>
     <img src="news.jpg" width="400px">
     <p>第一層面重創台灣服務業， 對全球產業鏈產生干擾，使全球經濟成長面臨下修壓力。
-連帶影響連帶影響2020年因應嚴重特殊傳染性肺炎疫情造成的經濟衰弱，為了振興經濟而發行的消費專用券。
+連帶影響連帶影響2020年因應嚴重特殊傳染性肺炎疫情造成的經濟衰弱，為了振興經濟而發行的消費專用券。</p>
+
+<h1 id="E" onclick="p(825)"><span>病例計算(請點擊病例計算)</span></h1>
+
+
+<div id="num" onclick="p(825)"><p id ="demo"></p></div>
+<div id="num2" onclick="p(714)"><p id ="demo2"></p></div>
+<div id="num3"><p id ="demo3"></p></div>
 
         
        
-    </p></div>
+    </div>
     <script>
-        
-        
+
+
+            var text="";
+            var text2="";
+            var text3="";
+        function p(n) 
+	    {
+            if (n==825){
+            for(let i = 1; i <= 825; i++) {
+            setTimeout(function() {
+                text="";
+                document.getElementById("demo").innerHTML = text;
+                text += "確診人數" + i +" ";
+                document.getElementById("demo").innerHTML = text;
+                var x = document.getElementById("num");
+                x.style.width=(i+100 )/2+"px";}, 3 * i)}
+
+                for(let i = 1; i <= 714; i++) {
+                setTimeout(function() {
+                text2="";
+                document.getElementById("demo2").innerHTML = text2;
+                text2 += "康復人數" + i +" ";
+                document.getElementById("demo2").innerHTML = text2;
+                var x = document.getElementById("num2");
+                x.style.width=(i+100 )/2+"px";}, 3 * i)}
+
+                for(let i = 1; i <= 7; i++) {
+                setTimeout(function() {
+                text3="";
+                document.getElementById("demo3").innerHTML = text3;
+                text3 += "死亡人數" + i +" ";
+                document.getElementById("demo3").innerHTML = text3;
+                var x = document.getElementById("num3");
+                x.style.width=(i+100)+"px";}, 3 * i)}
+            
+          
+            
+            
+            }  if (n==714){
+            for(let i = 1; i <= 714; i++) {
+            setTimeout(function() {
+                text2="";
+                document.getElementById("demo2").innerHTML = text2;
+                text2 += "康復人數" + i +" ";
+                document.getElementById("demo2").innerHTML = text2;
+                var x = document.getElementById("num2");
+                x.style.width=(i+100 )/2+"px";}, 3 * i)}
+        }
+            /* for(let i = 1; i <= 800; i++) {
+                text="";
+                document.getElementById("demo").innerHTML = text;
+                text += "確診人數" + i +" ";
+                setTimeout(console.log(i), 1000 * i)
+                document.getElementById("demo").innerHTML = text
+                } */
+			/* for (let i = 0; i < 800; i++)
+			{
+				text="";
+                document.getElementById("demo").innerHTML = text;
+                
+				text += "確診人數" + i +" ";
+                setTimeout(document.getElementById("demo").innerHTML = text,1000*i)
+                document.getElementById("demo").innerHTML = text; 
+			} */
+            
+		
+	    }
+
           function on(n)
           {
               if (n==1)
@@ -193,6 +297,7 @@
           }
           function leave(k)
           {
+              
             if (k==1)
               {
                   var x1 = document.getElementById("btn1");
