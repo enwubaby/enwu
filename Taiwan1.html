@@ -14,10 +14,10 @@
 		font-family:"cwTeXFangSong", serif;
     }
 	h1{
-		font-size: 22px;
+		font-size:28px;
 	}
 	h4{
-		font-size: 17px;
+		font-size:20px;
 	}
 	p
 	{
@@ -79,7 +79,7 @@
 	  width: 0%;
       color:#fff;
 	  height: 20px;
-	  background-color: #2f1d42;
+	  background-color:#7d6399 ;
 	  position: relative;
 	  font-size: 20px;
     }
@@ -89,7 +89,7 @@
 	  width: 0%;
       color:#fff;
 	  height: 20px;
-	  background-color: #41285c;
+	  background-color: #a175d1;
 	  position: relative;
 	  font-size: 20px;
     }
@@ -100,7 +100,7 @@
 	  width: 0%;
       color:#fff;
 	  height: 20px;
-	  background-color: #5c4475;
+	  background-color: #9f8ab6;
 	  position: relative;
 	  font-size: 20px;
     }
@@ -121,7 +121,7 @@
           
         </tr>
     </table></center>
-	<div style="width:50%;margin:0 auto;padding-right:25%;padding-left:25%;>
+	<div style="width:50%;margin:0 auto;padding-right:25%;padding-left:25%; padding-bottom:10%;>
     
     <img src="z.png" width="100%"> 
    <h1>最新防疫專案</h1>
@@ -181,25 +181,21 @@
     <p>第一層面重創台灣服務業， 對全球產業鏈產生干擾，使全球經濟成長面臨下修壓力。
 連帶影響連帶影響2020年因應嚴重特殊傳染性肺炎疫情造成的經濟衰弱，為了振興經濟而發行的消費專用券。</p>
 
-<h1 id="E" onclick="p(825)"><span>病例計算(請點擊病例計算)</span></h1>
-
-
-<div id="num" onclick="p(825)"><p id ="demo"></p></div>
-<div id="num2" onclick="p(714)"><p id ="demo2"></p></div>
-<div id="num3"><p id ="demo3"></p></div>
+<h1 id="E" onclick="p()"><span>病例計算(請點擊病例計算)</span></h1>
+<p id ="demo"></p><div id="num">  </div>
+<p id ="demo2"></p><div id="num2"></div>
+<p id ="demo3"></p><div id="num3"></div>
 
         
        
     </div>
     <script>
-
-
-            var text="";
-            var text2="";
-            var text3="";
-        function p(n) 
+    var text="";
+    var text2="";
+    var text3="";
+        function p() 
 	    {
-            if (n==825){
+            
             for(let i = 1; i <= 825; i++) {
             setTimeout(function() {
                 text="";
@@ -225,12 +221,9 @@
                 text3 += "死亡人數" + i +" ";
                 document.getElementById("demo3").innerHTML = text3;
                 var x = document.getElementById("num3");
-                x.style.width=(i+100)+"px";}, 3 * i)}
-            
-          
-            
-            
-            }  if (n==714){
+                x.style.width=(i+100)/2+"px";}, 3 * i)}
+
+            /* }  if (n==714){
             for(let i = 1; i <= 714; i++) {
             setTimeout(function() {
                 text2="";
@@ -238,8 +231,8 @@
                 text2 += "康復人數" + i +" ";
                 document.getElementById("demo2").innerHTML = text2;
                 var x = document.getElementById("num2");
-                x.style.width=(i+100 )/2+"px";}, 3 * i)}
-        }
+                x.style.width=(i+100)/2+"px";}, 3 * i)}
+        } */
             /* for(let i = 1; i <= 800; i++) {
                 text="";
                 document.getElementById("demo").innerHTML = text;
@@ -330,6 +323,5 @@
               }
           }
     </script>
-   
 </body>
 </html>
