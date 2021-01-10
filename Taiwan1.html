@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8"/>
+    
     <title>在台灣武漢肺炎疫情</title>
 <style> 
 @import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
@@ -112,11 +113,11 @@
 <center>
     <table>
         <tr>
-          <td><a href="#A"><div id="btn1" onmouseover="on(1)" onmouseleave="leave(1)">最新防疫專案</div></td></a>
-          <td><a href="#B"><div id="btn2" onmouseover="on(2)" onmouseleave="leave(2)">口罩販賣</div></td></a>
-          <td><a href="#C"><div id="btn3" onmouseover="on(3)" onmouseleave="leave(3)">控制方針</div></td></a>
-          <td><a href="#D"><div id="btn4" onmouseover="on(4)" onmouseleave="leave(4)">疫情影響</div></td></a>
-          <td><a href="#E"><div id="btn5" onmouseover="on(5)" onmouseleave="leave(5)">病例計算</div></td></a>
+          <td><a href=#A><div id="btn1" onmouseover="on(1)" onmouseleave="leave(1)">最新防疫專案</div></td></a>
+          <td><a href=#B><div id="btn2" onmouseover="on(2)" onmouseleave="leave(2)">口罩販賣</div></td></a>
+          <td><a href=#C><div id="btn3" onmouseover="on(3)" onmouseleave="leave(3)">控制方針</div></td></a>
+          <td><a href=#D><div id="btn4" onmouseover="on(4)" onmouseleave="leave(4)">疫情影響</div></td></a>
+          <td><a href=#E><div id="btn5" onmouseover="on(5)" onmouseleave="leave(5)">病例計算</div></td></a>
           <td width="40px"><a href ="hw07.html"><img src="home.png" width="40px"></a></td>
           
         </tr>
@@ -181,7 +182,7 @@
     <p>第一層面重創台灣服務業， 對全球產業鏈產生干擾，使全球經濟成長面臨下修壓力。
 連帶影響連帶影響2020年因應嚴重特殊傳染性肺炎疫情造成的經濟衰弱，為了振興經濟而發行的消費專用券。</p>
 
-<h1 id="E" onclick="p()"><span>病例計算(請點擊病例計算)</span></h1>
+<h1 id="E" scoll ="p()">病例計算(請點擊病例計算)</h1>
 <p id ="demo"></p><div id="num">  </div>
 <p id ="demo2"></p><div id="num2"></div>
 <p id ="demo3"></p><div id="num3"></div>
@@ -223,7 +224,7 @@
                 var x = document.getElementById("num3");
                 x.style.width=(i+100)/2+"px";}, 3 * i)}
 
-            /* }  if (n==714){
+              if (n==714){
             for(let i = 1; i <= 714; i++) {
             setTimeout(function() {
                 text2="";
@@ -232,8 +233,8 @@
                 document.getElementById("demo2").innerHTML = text2;
                 var x = document.getElementById("num2");
                 x.style.width=(i+100)/2+"px";}, 3 * i)}
-        } */
-            /* for(let i = 1; i <= 800; i++) {
+            }
+             /*for(let i = 1; i <= 800; i++) {
                 text="";
                 document.getElementById("demo").innerHTML = text;
                 text += "確診人數" + i +" ";
