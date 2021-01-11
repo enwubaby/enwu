@@ -4,6 +4,7 @@
     <meta charset="utf-8"/>
     
     <title>在台灣武漢肺炎疫情</title>
+    <link rel="icon" href="covid-19.ico" type="image/x-icon"> 
 <style> 
 @import url(https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
 	span{
@@ -118,7 +119,7 @@
           <td><a href=#C><div id="btn3" onmouseover="on(3)" onmouseleave="leave(3)">控制方針</div></td></a>
           <td><a href=#D><div id="btn4" onmouseover="on(4)" onmouseleave="leave(4)">疫情影響</div></td></a>
           <td><a href=#E><div id="btn5" onmouseover="on(5)" onmouseleave="leave(5)">病例計算</div></td></a>
-          <td width="40px"><a href ="hw07.html"><img src="home.png" width="40px"></a></td>
+          <td width="40px"><a href ="hw07.html"><img id="k" onmouseover="on(7)" onmouseleave="leave(7)" src="home.png" width="30px"></a></td>
           
         </tr>
     </table></center>
@@ -182,7 +183,7 @@
     <p>第一層面重創台灣服務業， 對全球產業鏈產生干擾，使全球經濟成長面臨下修壓力。
 連帶影響連帶影響2020年因應嚴重特殊傳染性肺炎疫情造成的經濟衰弱，為了振興經濟而發行的消費專用券。</p>
 
-<h1 id="E" scoll ="p()">病例計算(下滑)</h1>
+<h1 id="E" onclick="p()">病例計算(點擊)</h1>
 <p id ="demo"></p><div id="num">  </div>
 <p id ="demo2"></p><div id="num2"></div>
 <p id ="demo3"></p><div id="num3"></div>
@@ -259,32 +260,38 @@
               if (n==1)
               {
                   var x = document.getElementById("btn1");
-                  x.style.color="#ecec88";
+                  x.style.color="#000080";
                   x.style.height="40px";
               }
               if (n==2)
               {
                   var x2 = document.getElementById("btn2");
-                  x2.style.color="#ecec88";
+                  x2.style.color="#000080";
                   x2.style.height="40px";
               }
               if (n==3)
               {
                   var x3 = document.getElementById("btn3");
-                  x3.style.color="#ecec88";
+                  x3.style.color="#000080";
                   x3.style.height="40px";
               }
               if (n==4)
               {
                   var x4 = document.getElementById("btn4");
-                  x4.style.color="#ecec88";
+                  x4.style.color="#000080";
                   x4.style.height="40px"
               }
               if (n==5)
               {
                   var x4 = document.getElementById("btn5");
-                  x4.style.color="#ecec88";
+                  x4.style.color="#000080";
                   x4.style.height="40px"
+              }
+              if (n==7)
+              {
+                  var x3 = document.getElementById("k");
+                  x3.style.width="40px";
+                  x3.style.height="40px";
               }
             
             
@@ -292,6 +299,12 @@
           function leave(k)
           {
               
+            if (k==7)
+              {
+                  var x3 = document.getElementById("k");
+                  x3.style.width="30px";
+                  x3.style.height="30px";
+              }
             if (k==1)
               {
                   var x1 = document.getElementById("btn1");
