@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,6 +26,18 @@
 	{
 		font-size:15px;
 	}
+    #upto {
+		position: fixed;
+		padding:0px;
+		bottom: 20px;
+		right:20px;
+		background-color:#7fb0c0;
+        color: #fff;
+		width:40px;
+		height:40px;
+		font-size:20px;
+		Z-index:2;
+		}
 	#btn1 
 	{
 	  margin: 0px;
@@ -35,6 +48,7 @@
 	  position: relative;
 	  font-size: 20px;
 	}
+    
     #btn2 
 	{
 	  margin: 0px;
@@ -81,7 +95,7 @@
 	  width: 0%;
       color:#fff;
 	  height: 20px;
-	  background-color:#7d6399 ;
+	  background-color:#a177ce ;
 	  position: relative;
 	  font-size: 20px;
     }
@@ -91,7 +105,7 @@
 	  width: 0%;
       color:#fff;
 	  height: 20px;
-	  background-color:#9f8ab6 ;
+	  background-color:#9573b9 ;
 	  position: relative;
 	  font-size: 20px;
     }
@@ -102,7 +116,7 @@
 	  width: 0%;
       color:#fff;
 	  height: 20px;
-	  background-color: #8d7f9c;
+	  background-color:#957fad;
 	  position: relative;
 	  font-size: 20px;
     }
@@ -114,7 +128,7 @@
 <center>
     <table>
         <tr>
-          <td><a href=#A><div id="btn1" onmouseover="on(1)" onmouseleave="leave(1)">最新防疫專案</div></td></a>
+          <td id="up"><a href=#A><div id="btn1" onmouseover="on(1)" onmouseleave="leave(1)">最新防疫專案</div></td></a>
           <td><a href=#B><div id="btn2" onmouseover="on(2)" onmouseleave="leave(2)">口罩販賣</div></td></a>
           <td><a href=#C><div id="btn3" onmouseover="on(3)" onmouseleave="leave(3)">控制方針</div></td></a>
           <td><a href=#D><div id="btn4" onmouseover="on(4)" onmouseleave="leave(4)">疫情影響</div></td></a>
@@ -187,10 +201,11 @@
 <p id ="demo"></p><div id="num">  </div>
 <p id ="demo2"></p><div id="num2"></div>
 <p id ="demo3"></p><div id="num3"></div>
-
+<a href="#up"><div id ="upto" onmouseover="on(6)" onmouseleave="leave(6)">top</div></a>
         
        
     </div>
+陳宇軒說你好
     <script>
     var text="";
     var text2="";
@@ -287,6 +302,12 @@
                   x4.style.color="#000080";
                   x4.style.height="40px"
               }
+              if (n==6)
+              {
+                  var x4 = document.getElementById("upto");
+                  x4.style.width="45px";
+                  x4.style.height="45px";
+              }
               if (n==7)
               {
                   var x3 = document.getElementById("k");
@@ -334,6 +355,12 @@
                   var x4 = document.getElementById("btn5");
                   x4.style.color="#fff";
                   x4.style.height="30px"
+              }
+              if (k==6)
+              {
+                  var x4 = document.getElementById("upto");
+                  x4.style.width="40px";
+                  x4.style.height="40px";
               }
           }
     </script>
