@@ -3,7 +3,6 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    
     <title>在台灣武漢肺炎疫情</title>
     <link rel="icon" href="covid-19.ico" type="image/x-icon"> 
 <style> 
@@ -120,13 +119,18 @@
 	  position: relative;
 	  font-size: 20px;
     }
+    a:link{color:#fff;}      /* 未訪問連結*/
+	a:visited {color:#fff;}  /* 已訪問連結 */
+	a:hover {color:#000080;}  /* 滑鼠移動到連結上 */
+	a:active {color:#000080;} 
 　
 
 </style> 
 </head>
 <body>
 <center>
-    <table>
+    <div style='height:50px;'>
+	<table style='height:50px;'>
         <tr>
           <td id="up"><a href=#A><div id="btn1" onmouseover="on(1)" onmouseleave="leave(1)">最新防疫專案</div></td></a>
           <td><a href=#B><div id="btn2" onmouseover="on(2)" onmouseleave="leave(2)">口罩販賣</div></td></a>
@@ -136,7 +140,9 @@
           <td width="40px"><a href ="https://maggie-zhuang.github.io/text/homework/hw07.html"><img id="k" onmouseover="on(7)" onmouseleave="leave(7)" src="home.png" width="30px"></a></td>
           
         </tr>
-    </table></center>
+    </table>
+    </div>
+    </center>
 	<div style="width:50%;margin:0 auto;padding-right:25%;padding-left:25%; padding-bottom:10%;>
     
     <img src="z.png" width="100%"> 
@@ -213,7 +219,7 @@
         function p() 
 	    {
             
-            for(let i = 1; i <= 825; i++) {
+            for(let i = 1; i <= 868; i++) {
             setTimeout(function() {
                 text="";
                 document.getElementById("demo").innerHTML = text;
@@ -240,34 +246,7 @@
                 var x = document.getElementById("num3");
                 x.style.width=(i+100)/2+"px";}, 3 * i)}
 
-              if (n==714){
-            for(let i = 1; i <= 714; i++) {
-            setTimeout(function() {
-                text2="";
-                document.getElementById("demo2").innerHTML = text2;
-                text2 += "康復人數" + i +" ";
-                document.getElementById("demo2").innerHTML = text2;
-                var x = document.getElementById("num2");
-                x.style.width=(i+100)/2+"px";}, 3 * i)}
-            }
-             /*for(let i = 1; i <= 800; i++) {
-                text="";
-                document.getElementById("demo").innerHTML = text;
-                text += "確診人數" + i +" ";
-                setTimeout(console.log(i), 1000 * i)
-                document.getElementById("demo").innerHTML = text
-                } */
-			/* for (let i = 0; i < 800; i++)
-			{
-				text="";
-                document.getElementById("demo").innerHTML = text;
-                
-				text += "確診人數" + i +" ";
-                setTimeout(document.getElementById("demo").innerHTML = text,1000*i)
-                document.getElementById("demo").innerHTML = text; 
-			} */
             
-		
 	    }
 
           function on(n)

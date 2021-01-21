@@ -32,34 +32,6 @@
                 var x = document.getElementById("num3");
                 x.style.width=(i+100)/2+"px";}, 3 * i)}
 
-            /* }  if (n==714){
-            for(let i = 1; i <= 714; i++) {
-            setTimeout(function() {
-                text2="";
-                document.getElementById("demo2").innerHTML = text2;
-                text2 += "康復人數" + i +" ";
-                document.getElementById("demo2").innerHTML = text2;
-                var x = document.getElementById("num2");
-                x.style.width=(i+100)/2+"px";}, 3 * i)}
-        } */
-            /* for(let i = 1; i <= 800; i++) {
-                text="";
-                document.getElementById("demo").innerHTML = text;
-                text += "確診人數" + i +" ";
-                setTimeout(console.log(i), 1000 * i)
-                document.getElementById("demo").innerHTML = text
-                } */
-			/* for (let i = 0; i < 800; i++)
-			{
-				text="";
-                document.getElementById("demo").innerHTML = text;
-                
-				text += "確診人數" + i +" ";
-                setTimeout(document.getElementById("demo").innerHTML = text,1000*i)
-                document.getElementById("demo").innerHTML = text; 
-			} */
-            
-		
 	    }
 
           function on(n)
@@ -93,9 +65,7 @@
                   var x4 = document.getElementById("btn5");
                   x4.style.color="#ecec88";
                   x4.style.height="40px"
-              }
-            
-            
+              } 
           }
           function leave(k)
           {
