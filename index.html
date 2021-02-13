@@ -4,21 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>鸚鵡的網站</title>
+    <style>
+        a:link{color:rgb(230, 183, 122);}      /* 未訪問連結*/
+        a:visited {color:rgb(218, 169, 114);}  /* 已訪問連結 */
+        a:hover {color:#a34a21;}  /* 滑鼠移動到連結上 */
+        a:active {color:#a34a21;} 
+        p
+        {
+            font-size:15px;
+            color:rgb(148, 82, 82);
+        }
+        h1
+        {
+            color:rgb(126, 72, 22)
+        }
+    </style>
 </head>
-<body>
-    <h1>資工二乙<br>陳宇軒<br>1110832053<br></h1>
-    <a href="table.html">作業一 表格</a><br>
-    <a href="99.html">作業二 九九乘法 </a>
-    <a href="Div.html">作業三 div排版</a>
-    <a href="tump.html">期中報告</a>
-    <a href="blog.html">部落格</a>
-    <a href="999.html">九九乘法表</a>
-    <a href="Taiwan1.html">期末報告</a>
-    <script>
-    for (let i=0;i<30;i++){
-        document.write(Math.floor(Math.random()*(i+1));
+<body style="background-color:bisque">
+    
+<div>
+    <h1>資工二乙 <br>陳宇軒 1110832053<br></h1>
 
-    }
-    </script>
-</body>
+    <p>作業一  <a href="table.html">個人表格</a><br>
+    作業二  <a href="99.html"> 九九乘法 </a><br>
+    作業三  <a href="Div.html">div排版</a><br>
+    期中報告  <a href="tump.html">唐納川普</a><br></p>
+</div>
+
+<div><p>
+    作業四  <a href="blog.html">部落格</a><br>
+    作業五  <a href="999.html">九九乘法</a><br>
+    期末報告  <a href="Taiwan1.html">武漢肺炎</a><br>
+</p>
+</div>
+<p><a href="https://docs.google.com/spreadsheets/d/1lm_nVuQUejbYJeEmImtw5QjDK7To5AvRR3E7sjSDt1U/edit#gid=0">勾北勾北</a>
+</p></body>
 </html>
