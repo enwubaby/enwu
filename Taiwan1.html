@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,7 +24,7 @@
 	{
 		font-size:15px;
 	}
-    #upto {
+    #top {
 		position: fixed;
 		padding:0px;
 		bottom: 20px;
@@ -33,7 +32,7 @@
 		background-color:#7fb0c0;
         color: #fff;
 		width:40px;
-		height:40px;
+		height:30px;
 		font-size:20px;
 		Z-index:2;
 		}
@@ -121,8 +120,8 @@
     }
     a:link{color:#fff;}      /* 未訪問連結*/
 	a:visited {color:#fff;}  /* 已訪問連結 */
-	a:hover {color:#000080;}  /* 滑鼠移動到連結上 */
-	a:active {color:#000080;} 
+	a:hover {color:#000000;}  /* 滑鼠移動到連結上 */
+	a:active {color:#000000;} 
 　
 
 </style> 
@@ -132,20 +131,19 @@
     <div style='height:50px;'>
 	<table style='height:50px;'>
         <tr>
-          <td id="up"><a href=#A><div id="btn1" onmouseover="on(1)" onmouseleave="leave(1)">最新防疫專案</div></td></a>
-          <td><a href=#B><div id="btn2" onmouseover="on(2)" onmouseleave="leave(2)">口罩販賣</div></td></a>
-          <td><a href=#C><div id="btn3" onmouseover="on(3)" onmouseleave="leave(3)">控制方針</div></td></a>
-          <td><a href=#D><div id="btn4" onmouseover="on(4)" onmouseleave="leave(4)">疫情影響</div></td></a>
-          <td><a href=#E><div id="btn5" onmouseover="on(5)" onmouseleave="leave(5)">病例計算</div></td></a>
-          <td width="40px"><a href ="https://maggie-zhuang.github.io/text/homework/hw07.html"><img id="k" onmouseover="on(7)" onmouseleave="leave(7)" src="home.png" width="30px"></a></td>
+          <td id="up"><a href=#A><div id="btn1" onmouseover="on('btn1')" onmouseleave="leave('btn1')">最新防疫專案</div></td></a>
+          <td><a href=#B><div id="btn2" onmouseover="on('btn2')" onmouseleave="leave('btn2')">口罩販賣</div></td></a>
+          <td><a href=#C><div id="btn3" onmouseover="on('btn3')" onmouseleave="leave('btn3')">控制方針</div></td></a>
+          <td><a href=#D><div id="btn4" onmouseover="on('btn4')" onmouseleave="leave('btn4')">疫情影響</div></td></a>
+          <td><a href=#E><div id="btn5" onmouseover="on('btn5')" onmouseleave="leave('btn5')">病例計算</div></td></a>
+          <td width="40px"><a href ="https://maggie-zhuang.github.io/text/homework/hw07.html">
+          <img src="home.jpg" id="home" onmouseover="on('home')" onmouseleave="leave('home')" width="35px"></a></td>
           
         </tr>
     </table>
     </div>
     </center>
-	<div style="width:50%;margin:0 auto;padding-right:25%;padding-left:25%; padding-bottom:10%;>
-    
-    <img src="z.png" width="100%"> 
+	<div style="width:50%;margin:0 auto;padding-right:25%;padding-left:25%; padding-bottom:10%;">
    <h1>最新防疫專案</h1>
     <h4>12月1日秋冬防疫專案</h4>
         <p>
@@ -207,7 +205,7 @@
 <p id ="demo"></p><div id="num">  </div>
 <p id ="demo2"></p><div id="num2"></div>
 <p id ="demo3"></p><div id="num3"></div>
-<a href="#up"><div id ="upto" onmouseover="on(6)" onmouseleave="leave(6)">top</div></a>
+<a href=#up><div id ="top" onmouseover="on('top')" onmouseleave="leave('top')">top</div></a>
         
        
     </div>
@@ -219,7 +217,7 @@
         function p() 
 	    {
             
-            for(let i = 1; i <= 890; i++) {
+            for(let i = 1; i <= 940; i++) {
             setTimeout(function() {
                 text="";
                 document.getElementById("demo").innerHTML = text;
@@ -228,7 +226,7 @@
                 var x = document.getElementById("num");
                 x.style.width=(i+100 )/2+"px";}, 3 * i)}
 
-                for(let i = 1; i <= 797; i++) {
+                for(let i = 1; i <= 886; i++) {
                 setTimeout(function() {
                 text2="";
                 document.getElementById("demo2").innerHTML = text2;
@@ -237,7 +235,7 @@
                 var x = document.getElementById("num2");
                 x.style.width=(i+100 )/2+"px";}, 3 * i)}
 
-                for(let i = 1; i <= 7; i++) {
+                for(let i = 1; i <= 9; i++) {
                 setTimeout(function() {
                 text3="";
                 document.getElementById("demo3").innerHTML = text3;
@@ -251,96 +249,17 @@
 
           function on(n)
           {
-              if (n==1)
-              {
-                  var x = document.getElementById("btn1");
-                  x.style.color="#000080";
+             
+                  let x = document.getElementById(n);
+                  x.style.color="#000000";
                   x.style.height="40px";
-              }
-              if (n==2)
-              {
-                  var x2 = document.getElementById("btn2");
-                  x2.style.color="#000080";
-                  x2.style.height="40px";
-              }
-              if (n==3)
-              {
-                  var x3 = document.getElementById("btn3");
-                  x3.style.color="#000080";
-                  x3.style.height="40px";
-              }
-              if (n==4)
-              {
-                  var x4 = document.getElementById("btn4");
-                  x4.style.color="#000080";
-                  x4.style.height="40px"
-              }
-              if (n==5)
-              {
-                  var x4 = document.getElementById("btn5");
-                  x4.style.color="#000080";
-                  x4.style.height="40px"
-              }
-              if (n==6)
-              {
-                  var x4 = document.getElementById("upto");
-                  x4.style.width="45px";
-                  x4.style.height="45px";
-              }
-              if (n==7)
-              {
-                  var x3 = document.getElementById("k");
-                  x3.style.width="40px";
-                  x3.style.height="40px";
-              }
-            
-            
           }
           function leave(k)
           {
-              
-            if (k==7)
-              {
-                  var x3 = document.getElementById("k");
-                  x3.style.width="30px";
-                  x3.style.height="30px";
-              }
-            if (k==1)
-              {
-                  var x1 = document.getElementById("btn1");
-                  x1.style.color="#fff";
-                  x1.style.height="30px"
-              }
-              if (k==2)
-              {
-                  var x2 = document.getElementById("btn2");
-                  x2.style.color="#fff";
-                  x2.style.height="30px"
-              }
-              if (k==3)
-              {
-                  var x3 = document.getElementById("btn3");
-                  x3.style.color="#fff";
-                  x3.style.height="30px"
-              }
-              if (k==4)
-              {
-                  var x4 = document.getElementById("btn4");
-                  x4.style.color="#fff";
-                  x4.style.height="30px"
-              }
-              if (k==5)
-              {
-                  var x4 = document.getElementById("btn5");
-                  x4.style.color="#fff";
-                  x4.style.height="30px"
-              }
-              if (k==6)
-              {
-                  var x4 = document.getElementById("upto");
-                  x4.style.width="40px";
-                  x4.style.height="40px";
-              }
+              let x = document.getElementById(k);
+                  x.style.color="#fff";
+                  x.style.height="30px";
+
           }
     </script>
 </body>
